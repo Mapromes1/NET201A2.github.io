@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A2 Project</title>
+	<style>
+		a {color:rgb(9, 120, 223)}
+		h1 {font-family: Arial, sans-serif;}
+		h2 {font-family: Times, serif;}
+	
+	</style>
+
+</head>
+<!--Made by Matthew Alexander Promes-->	
+<body style="background-color: rgb(69, 126, 36)">
+	<div id="challengehead" style="font-family: Arial, sans-serif;"><h1>World Map Challenge</h1><hr><div>
+	<div id="randquestion"></div>
+	<div id="image"><img src="Blank-World-Map-Color.jpg" usemap="#image-map"><div>
+	<div id="randimap"><div>
+
+		<script>
+			let q1 = "<h2>Where is Iceland?</h2>";
+			let q2 = "<h2>Where is Uruguay?</h2>";
+			let q3 = "<h2>Where is Taiwan?</h2>";
+			let q4 = "<h2>Where is Italy?</h2>";
+			let q5 = "<h2>Where is France?</h2>";
+			let q6 = "<h2>Where is Japan?</h2>";
+			
+			let map1 ="<map name='image-map'><area target='' alt='Globe' title='Globe' href='Iceland.html' coords='821,92,813,103,824,111,837,109,849,106,848,93' shape='poly'><area target='' alt='Globe' title='Globe' href='Wrong Guess.html' coords='420,8,296,56,183,129,77,232,8,407,11,536,58,660,137,751,298,868,439,919,827,922,1177,918,1374,913,1549,849,1718,703,1783,568,1791,429,1780,342,1711,213,1597,106,1465,30,1373,6' shape='poly'></map> ";
+			let map2 ="<map name='image-map'><area target='' alt='Globe' title='Globe' href='Uruguay.html' coords='628,631,627,645,630,655,643,658,647,653,646,637' shape='poly'><area target='' alt='Globe' title='Globe' href='Wrong Guess.html' coords='420,8,296,56,183,129,77,232,8,407,11,536,58,660,137,751,298,868,439,919,827,922,1177,918,1374,913,1549,849,1718,703,1783,568,1791,429,1780,342,1711,213,1597,106,1465,30,1373,6' shape='poly'></map> ";
+			let map3 ="<map name='image-map'><area target='' alt='Globe' title='Globe' href='Taiwan.html' coords='1493,317,1482,324,1489,336,1497,327' shape='poly'><area target='' alt='Globe' title='Globe' href='Wrong Guess.html' coords='420,8,296,56,183,129,77,232,8,407,11,536,58,660,137,751,298,868,439,919,827,922,1177,918,1374,913,1549,849,1718,703,1783,568,1791,429,1780,342,1711,213,1597,106,1465,30,1373,6' shape='poly'></map> ";
+			let map4 ="<map name='image-map'><area target='' alt='Globe' title='Globe' href='Italy.html' coords='961,201,946,198,932,208,942,214,942,240,954,225,964,232,969,240,956,243,969,252,978,238,978,227,967,221,958,209' shape='poly'><area target='' alt='Globe' title='Globe' href='Wrong Guess.html' coords='420,8,296,56,183,129,77,232,8,407,11,536,58,660,137,751,298,868,439,919,827,922,1177,918,1374,913,1549,849,1718,703,1783,568,1791,429,1780,342,1711,213,1597,106,1465,30,1373,6' shape='poly'></map> ";
+			let map5 ="<map name='image-map'><area target='' alt='Globe' title='Globe' href='France.html' coords='911,173,902,181,883,184,891,195,894,214,910,220,918,214,931,216,931,203,927,192,919,184' shape='poly'><area target='' alt='Globe' title='Globe' href='Wrong Guess.html' coords='420,8,296,56,183,129,77,232,8,407,11,536,58,660,137,751,298,868,439,919,827,922,1177,918,1374,913,1549,849,1718,703,1783,568,1791,429,1780,342,1711,213,1597,106,1465,30,1373,6' shape='poly'></map> ";
+			let map6 ="<map name='image-map'><area target='' alt='Globe' title='Globe' href='Japan.html' coords='1533,204,1532,220,1536,236,1538,251,1525,255,1512,265,1517,286,1530,278,1543,270,1552,267,1555,252,1552,235,1555,220,1547,208' shape='poly'><area target='' alt='Globe' title='Globe' href='Wrong Guess.html' coords='420,8,296,56,183,129,77,232,8,407,11,536,58,660,137,751,298,868,439,919,827,922,1177,918,1374,913,1549,849,1718,703,1783,568,1791,429,1780,342,1711,213,1597,106,1465,30,1373,6' shape='poly'></map> ";
+
+			let randq = Math.floor(Math.random()*10)%6+1;
+
+			console.log(randq);
+		if (randq == 1){
+			document.getElementById('randquestion').innerHTML = q1;
+			document.getElementById('randimap').innerHTML = map1;
+		} else if (randq == 2) {
+			document.getElementById('randquestion').innerHTML = q2;	
+			document.getElementById('randimap').innerHTML = map2;			
+		} else if (randq == 3) {
+			document.getElementById('randquestion').innerHTML = q3;	
+			document.getElementById('randimap').innerHTML = map3;	
+		} else if (randq == 4) {
+			document.getElementById('randquestion').innerHTML = q4;	
+			document.getElementById('randimap').innerHTML = map4;	
+		} else if (randq == 5) {
+			document.getElementById('randquestion').innerHTML = q5;	
+			document.getElementById('randimap').innerHTML = map5;	
+		} else if (randq == 6) {
+			document.getElementById('randquestion').innerHTML = q6;	
+			document.getElementById('randimap').innerHTML = map6;			
+		}
+	
+	</script>
+</body>
+</html>
